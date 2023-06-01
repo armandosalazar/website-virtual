@@ -1,0 +1,123 @@
+/* normalize css */
+@import 'https://necolas.github.io/normalize.css/8.0.1/normalize.css';
+
+:root {
+    --primary-color: #7286D3;
+    --secundary-color: #8EA7E9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--secundary-color);
+    color: white;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: var(--primary-color);
+    /* header static to scroll */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+main {
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td,
+table th {
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: var(--primary-color);
+}
+
+table tr:hover {
+    background-color: var(--primary-color);
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+table td a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--secundary-color);
+}
+
+table td a:hover {
+    background-color: #ddd;
+    color: var(--primary-color);
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='password'] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type='file'] {
+    margin-bottom: 10px;
+}
+
+input[type='submit'] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+form {
+    width: 800px;
+    margin: 0 auto;
+}
+
+h2,
+h3,
+h4 {
+    text-align: center;
+}
